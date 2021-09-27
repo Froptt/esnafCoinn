@@ -5,14 +5,18 @@ from .forms import ContactForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
+
+
+
 def index(request):
 	
-	return render(request,"index.html")
+	return render(request,"homepage.html")
 
 
 def about(request):
 	return render(request,"about.html")
-
+def whitepeaper(request):
+	return render(request,"whitepeaper.html")
 def emailView(request):
 	if request.method=="POST":
 		form=ContactForm(request.POST)

@@ -28,6 +28,7 @@ urlpatterns = [
 
     path('about/',views.about,name="about"),
     path('contact/',views.emailView,name="contact"),
+    path('whitepeaper/',views.whitepeaper,name="whitepeaper"),
 
     
     path('articles/',include("article.url")),

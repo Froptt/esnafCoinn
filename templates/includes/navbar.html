@@ -1,11 +1,11 @@
 
 {% load static %}
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav style="height:75px" class="navbar navbar-expand-lg navbar-light bg-light">
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
 	<li style="float:left" class="nav-item">
-        <a  class="nav-link" href="#"><img height="10%" width="50px" src="{% static 'logo.jfif' %}"></a>
+        <a  class="nav-link" href="#"><img height="10%" width="15%" src="{% static 'logo.jfif' %}"></a>
       </li>
       </ul>
     <ul style="margin-left:-30%;font-size:20px;position: relative;font-family:font-family:Regular 400,Helvetica,Arial,Verdana;" class="navbar-nav mr-auto">
@@ -14,7 +14,7 @@
         <a class="nav-link" href="{% url 'index' %}">Anasayfa</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Whitepeaper</a>
+        <a class="nav-link" href="{% url 'whitepeaper' %}">Whitepeaper</a>
       </li>
 <li class="nav-item">
         <a class="nav-link" href="{% url 'about' %}">Hakkımızda</a>
@@ -22,9 +22,13 @@
 		<li class="nav-item">
         <a class="nav-link" href="{% url 'contact' %}">İletişim</a>
       </li>
-
+<li style="margin-left:250px" class="nav-item">
+        <a  class="nav-link" href="#"><img height="35%" width="35%" src="{% static 'bg.jfif' %}"></a>
+      </li>
     </ul>
 
     </form>
+
   </div>
 </nav>
+<hr>
